@@ -40,6 +40,7 @@ body{
     font-size: 8vmin;
     color: rgb(122, 9, 137);
     background-color: #e6e695;
+    cursor: pointer;
 }
 
 /*Button container*/
@@ -72,6 +73,7 @@ body{
     color:#ffffc7;
     border-radius: 7px;
     border: none;
+    cursor: pointer;
 }
 
 /*Button hover effect to dismatch color during cursor is inside the box*/
