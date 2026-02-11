@@ -1,0 +1,123 @@
+/*Remove default margin & padding*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Body content styling*/
+body{
+    background-color: #0c5d5f;
+    text-align: center;
+}
+
+/*Game container --> outside part of the game board like div without fix width*/
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Game board --> Arround the all button space with fixd height and width*/
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    background-color: #071b1c;
+}
+
+/*Each box styling --> All button/box's shaps*/
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 0 1rem;
+    font-size: 8vmin;
+    color: rgb(122, 9, 137);
+    background-color: #e6e695;
+}
+
+/*Button container*/
+.btn-container{
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    gap: 1rem;                  
+    margin-top: 2rem;
+}
+
+/*Reset button and undo button styling at bottom*/
+#Reset-btn,
+#undo-btn{
+    background-color: #191913;
+    color: #ffffc7;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/*New game button styling*/
+#new-btn{
+    padding: 1rem;
+    font-size: 1.10rem;
+    background-color: #191913;
+    color:#ffffc7;
+    border-radius: 7px;
+    border: none;
+}
+
+/*Button hover effect to dismatch color during cursor is inside the box*/
+button:hover{
+    background-color: #c1bbbb;
+}
+
+/*Button click effect to activate button*/
+button:active{
+    background-color: #999;
+}
+
+/*Hover effect*/
+#Reset-btn:hover,
+#new-btn:hover,
+#undo-btn:hover{
+    background-color: #2d2d2d;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*Active button*/
+#Reset-btn:active,
+#undo-btn:active,
+#new-btn:active{
+    background-color: #999;
+}
+
+/*Winner message styling*/
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+
+/*Full screen winner container after winning game*/
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/*Hide class*/
+.hide{
+    display: none;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Makes website responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title of Project-->
+    <title>Tic-Tac-Toe game</title>
+
+    <!--Linking external CSS file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Winner message container-->
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <!--Button for click new game-->
+        <button id="new-btn">New Game</button>
+    </div>
+    <main>
+
+        <!--Heading/Name of project-->
+        <h1>Tic Tac Toe</h1>
+
+        <!--Game Container-->
+        <div class="container">
+            <div class="game">
+                <!--9 Buttons-->
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+
+        <!--Buttons container -->
+        <div class="btn-container">
+            <!--Button for clic Reset game-->
+            <button id="Reset-btn">Reset Game</button>
+
+            <!--Button for clic to back step-->
+            <button id="undo-btn">Undo</button>
+        </div>
+    </main>
+    <!--Linking JavaScript file-->
+    <script src="logic.js"></script>
+</body>
+</html>
